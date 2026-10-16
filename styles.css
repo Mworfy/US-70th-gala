@@ -326,6 +326,23 @@ a { color: var(--blue); text-underline-offset: 3px; }
 
 .schedule p { margin-top: 4px; color: var(--ink-soft); }
 
+.schedule-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  padding: 7px 14px;
+  border-radius: 999px;
+  background: var(--blue);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: background-color 160ms ease, transform 100ms ease-out;
+}
+.schedule-link:hover { background: var(--blue-deep); }
+.schedule-link:active { transform: scale(0.97); }
+
 .schedule li.is-past { opacity: 0.5; }
 .schedule li.is-now { background: var(--sky); }
 .schedule li.is-now::before { background: var(--blue); box-shadow: 0 0 0 6px rgba(3, 126, 243, 0.18); }
